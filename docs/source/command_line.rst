@@ -16,7 +16,7 @@ flag (or its long form ``--help``)::
               [--warn-incomplete-stub] [--warn-redundant-casts]
               [--warn-no-return] [--warn-unused-ignores] [--show-error-context]
               [--fast-parser] [-i] [--cache-dir DIR] [--strict-optional]
-              [--strict-optional-whitelist [GLOB [GLOB ...]]]
+              [--strict-optional-whitelist [GLOB [GLOB ...]]] [--strict]
               [--junit-xml JUNIT_XML] [--pdb] [--show-traceback] [--stats]
               [--inferstats] [--custom-typing MODULE]
               [--custom-typeshed-dir DIR] [--scripts-are-modules]
@@ -366,7 +366,8 @@ Here are some more useful flags:
   also currently ignores functions with an empty body or a body that is
   just ellipsis (``...``), since these can be valid as abstract methods.
 
-For the remaining flags you can read the full ``mypy -h`` output.
+- ``--strict`` mode enables all optional error checking flags.  You can see the
+  list of flags enabled by strict mode in the full ``mypy -h`` output.
 
 .. note::
 
